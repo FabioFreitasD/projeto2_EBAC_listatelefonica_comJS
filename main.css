@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right,#e98de9, #5d5df5, #e16ee1);
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    padding-top: 20px ;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-image: linear-gradient(to right, #d42fd4, #6868f1);
+}
+
+header .title {
+    flex-shrink: 0;
+    color: white;
+    font-size: 20px;
+    margin: 16px;
+}
+
+header .title h1 {
+    position: relative;
+    top: -20px;
+    left: 90px;
+    text-align: center;
+}
+
+header .title h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+header .title p {
+    font-size: 22px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.container h2 {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+form input,
+form label {
+    text-align: center;
+    display: block;
+    width: 320px;
+    margin-bottom: 2px;
+    padding: 8px 40px;
+    margin-left: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.error-Name {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-color: red;
+    color: black;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.error-Name:empty {
+    display: none;
+}
+
+.sucess-message {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(8, 108, 8);
+    color: #d8d8f4;
+    margin-bottom: 5px;
+}
+
+.sucess-message:empty {
+    display: none; 
+}
+
+.errorEmail {
+    text-align: center;
+    font-size: 16px;
+    background-color: red;
+    color: black;
+    margin-bottom: 5px;
+    display: none;
+}
+
+form button {
+    padding: 8px 42px;
+    margin-left: 8px;
+    position: relative;
+    top: 4px;
+    left: 135px;
+    background: none;
+    color: #d8d8f4;
+    background-color: #0f0f9a;
+    border: 1px solid #080867;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+img {
+    width: 1020px;
+    height: auto;
+    position: relative;
+    top: 12px;
+    left: 15px;
+}

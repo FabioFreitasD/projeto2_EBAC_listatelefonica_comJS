@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefônica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:wght@600&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Sua lista online</h1>
+            <h2>Lista de contatos</h2>
+            <p>Salve seus contatos online, esvazie a memória do seu celular e tenha tudo a um click.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Teste nossa Lista</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div style="display: flex;">
+            <div class="container">
+                <h2 id="Cadastro">Cadastre-se Grátis</h2>
+                <form id="form-inscrição">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome-completo" placeholder="Nome Completo" required>
+                    <p id="errorName" class="error-Name"></p>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="email-1" placeholder="Digite seu melhor e-mail." required>
+                    <label for="e-mail">Confirme seu E-mail</label>
+                    <input type="email" id="email-2" placeholder="E-mail" required>
+                    <p id="error-Email" class="errorEmail"></p>
+                    <label for="senha">Digite uma Senha</label>
+                    <input type="password" id="senha-usuario" placeholder="Senha">
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="sucessMessage" class="sucess-message"></p>
+                <div>
+                    <h2 id="entrar">Já é usuario? Faça loguin.</h2>
+                    <form>
+                        <input type="email" placeholder="E-mail">
+                        <label for="senha">Digite sua Senha</label>
+                        <input type="password" placeholder="Senha">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="imag">
+                <img src="./imagens/download.jpeg" alt="mulher ao telefone escrevendo.">
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
