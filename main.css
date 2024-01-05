@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-origin: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -132,4 +132,124 @@ img {
     position: relative;
     top: 12px;
     left: 15px;
+    max-width: 100%;
+}
+
+.customstyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.customstyle form {
+    margin-left: center;
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.customstyle h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.customstyle input {
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+    margin-right: 80px;
+}
+
+.customstyle form button {
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    margin-left: -100px;
+}
+
+.customstyle table {
+    width: 60%;
+    margin-top: 16px;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+}
+
+.customstyle th, .customstyle td {
+    border-bottom: 2px solid #000;
+    font-size: 18px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.customstyle th {
+    text-align: center;
+}
+
+.customstyle tr {
+    font-weight: bold;
+    color: #1d1919;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.Container .social-links {
+    position: absolute;
+}
+
+.Container h2 {
+    font-size: 35px;
+    padding: 8px;
+}
+
+.Container h3 {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.Container li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.Container .logo {
+    height: auto;
+    width: 90px;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.Container .log {
+    height: auto;
+    width: 130px;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.Container p {
+    padding: 8px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #b421b4, #2b2b92);
+    color: #ecf0f2;
+    padding: 16px 0;
+    text-align: center;
 }

@@ -4,6 +4,7 @@ const emailUsuario = document.getElementById('email-1');
 const confirmeEmail = document.getElementById('email-2');
 const myPassword = document.getElementById('senha-usuario');
 
+    //Campo para validar nome completo
 let formEvalido = false;
 
 function validaNome(nomeCompleto) {
@@ -74,5 +75,39 @@ form.addEventListener('submit', function(e) {
         mensagemEmail.style.display = 'none';
     }
 });
+
+ // Campo para a logica da soma dos contatos
+
+const formulario = document.getElementById('soma-contato');
+let quantidadeContatos = 0;         // Variável para contar a quantidade de contatos.
+
+formulario.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const inputNomeContato = document.getElementById('nomeContato');
+    const inputTelefoneContato = document.getElementById('telefoneContato');
+    const corpoTabela = document.querySelector('tbody');
+    const quantidadeDeContatosCell = document.getElementById('quantidadeContatos');
+
+    if (inputNomeContato.value && inputTelefoneContato.value) {
+     // Adiciona uma nova linha à tabela.
+    let linha = `<tr>`;
+    linha += `<td>${inputNomeContato.value}</td>`;
+    linha += `<td>${inputTelefoneContato.value}</td>`;
+    linha += `</tr>`;
+
+    corpoTabela.innerHTML += linha;
+    quantidadeContatos++;               // Incrementa a quantidade de contatos.
+    quantidadeDeContatosCell.textContent = `Quantidade de contatos armazenados: (${quantidadeContatos})`;       // Atualiza o texto da célula de quantidade de contatos
+    inputNomeContato.value = '';
+    inputTelefoneContato.value = '';
+    } else {
+    alert("Por favor, preencha ambos os campos.");
+    }
+});
+
+
+
+
 
 
